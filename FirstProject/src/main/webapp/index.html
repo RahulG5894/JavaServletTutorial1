@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>HTML Landing Page</title>
+<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>My Form</h1>
+		<form action="registerServlet" method="post">
+			<table>
+				<tr>
+					<td>Enter your name: </td>
+					<td><input type="text" name="username" placeholder="Enter your name"/></td>
+				</tr>
+				<tr>
+					<td>Enter your password: </td>
+					<td><input type="password" name="userpassword" placeholder="Enter your password"/></td>
+				</tr>
+				<tr>
+					<td>Enter your email: </td>
+					<td><input type="text" name="useremail" placeholder="Enter your email"/></td>
+				</tr>
+				<tr>
+					<td>Select Gender: </td>
+					<td><input type="radio" name="usergender" value="male">Male &nbsp; &nbsp; <input type="radio" name="usergender" value="female">Female</td>
+				</tr>
+				<tr>
+					<td>Select your course</td>
+					<td><select name="usercourse">
+						<option>Java</option>
+						<option>Php</option>
+						<option>Python</option>
+						<option>JavaScript</option>
+					</select>
+					</td>
+				</tr>
+				<tr style="text-align:right;">
+					<td> <input type="checkbox" value="checked" name="condition" />
+					</td><td>Agree to terms and conditions
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><button type="submit">Register</button>
+					<button type="reset">Reset</button>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

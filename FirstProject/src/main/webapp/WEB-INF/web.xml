@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>FirstProject</display-name>
+  <welcome-file-list>
+    <welcome-file>Home.html</welcome-file>
+  </welcome-file-list>  
+  
+  <servlet>
+  	<servlet-name>SuccessServlet</servlet-name>
+  	<servlet-class>com.test.servlets.SuccessServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SuccessServlet</servlet-name>
+  	<url-pattern>/success</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>OneServlet</servlet-name>
+  	<servlet-class>com.test.servlets.OneServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>OneServlet</servlet-name>
+  	<url-pattern>/first</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>SecondServlet</servlet-name>
+  	<servlet-class>com.test.servlets.SecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SecondServlet</servlet-name>
+  	<url-pattern>/second</url-pattern> 
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ThirdServlet</servlet-name>
+  	<servlet-class>com.test.servlets.ThirdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ThirdServlet</servlet-name>
+  	<url-pattern>/third</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Register</servlet-name>
+  	<servlet-class>com.test.servlets.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Register</servlet-name>
+  	<url-pattern>/registerServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Sum</servlet-name>
+  	<servlet-class>com.test.servlets.Sum</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Sum</servlet-name>
+  	<url-pattern>/sum</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Product</servlet-name>
+  	<servlet-class>com.test.servlets.Product</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Product</servlet-name>
+  	<url-pattern>/product</url-pattern>
+  </servlet-mapping>
+  
+  </web-app>
